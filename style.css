@@ -1,0 +1,196 @@
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-image: url(image/bg-intro-desktop.png);
+ 
+    font-size: 16px;
+}
+.container{
+    background-color: hsl(0, 100%, 74%) ;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    box-sizing: border-box;
+    border: 16px solid hsl(0, 100%, 74%);
+    align-items: center;
+    padding: auto;
+    margin: auto;
+    max-width: min(90vm);
+}
+.leftside{
+
+    color: white;
+    width: 900px;
+    
+    
+}
+.leftside p{
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 500;
+}
+.rightside{
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+}
+.rightside .in{
+    border: none;
+    width: 360px;
+    height: 40px;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    border: 10px solid hsl(248, 32%, 49%);
+}
+.rightside form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border: 10px solid white;
+    border-radius: 5px;
+    background-color: white;
+
+}
+.rightside form input{
+    background-color: none  ;
+    font-size: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid transparent !important;
+    height: 40px;
+
+}
+.rightside form .trial{
+
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+ 
+}
+.linkeed{
+    color: hsl(0, 100%, 74%);
+    opacity: 0.6;
+    font-size: 10px;
+    font-weight: 400 ;
+
+
+}
+.linkeed span{
+    color: #333;
+    font-size: 10px;
+    font-weight: 400px ;
+    
+}
+
+/*code */
+
+
+.images{
+
+    display: none;
+}
+.nameform{
+
+    font-size: 10px;
+    color: hsl(0, 100%, 74%);
+    display: none;
+}
+#name{
+
+}
+#firstfield{
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+/* suite mobile*/
+@media only screen and (max-width: 375px){
+
+    body{
+        background-image: url(image/bg-intro-mobile.png);
+        width: 100%;
+        height: 100%;
+    }
+        .container{
+            position: relative;
+            bottom: 520px;
+            position: relative;
+            top: -10px !important;
+            left: -10px;
+            display: grid;
+            height: 800px;
+
+        }
+        .leftside{
+            width: 100%;
+        }
+      .leftside .titre{
+          position: relative;
+          bottom: 130px;
+          right: 170px !important;
+          text-align: justify;
+      }
+      .leftside .firstsideparagraph{
+          position: relative;
+          bottom: 90px;
+          right: 170px !important;
+          text-align: justify;
+          width: 290px !important;
+      }
+      .rightside .in{
+        border: none;
+        width: 290px;
+        height: 20px;
+        position: relative;
+        right: 210px;
+        top: 50px;
+        
+    }
+      .rightside form{
+        display: grid;
+        width: 290px;
+        height: 450px;
+        position: relative;
+        right: 400px !important;
+        top: 50px !important;
+        box-sizing: border-box;
+        border: 10px solid white;
+        border-radius: 5px;
+        background-color: white;
+        margin-left: 190px;
+    }
+    .rightside form input{
+        background-color: none  ;
+        font-size: 10px;
+        border: none;
+        border-radius: 5px;
+        border: 1px solid transparent !important;
+        height: 20px;
+        width: 250px;
+        position: relative;
+        left: 10px;
+    
+    }
+    .rightside form .trial{
+        width: 180x;
+        height: 50px;
+        background-color: hsl(154, 59%, 51%);
+        color: white;
+        position: relative;
+        left: 10px;
+    }
+    .nameform{
+        position: relative;
+        top: 5px;
+        left: 15px;
+        font-size: 10px;
+        color: hsl(0, 100%, 74%);
+        visibility: hidden;
+    }
+
+}
+    

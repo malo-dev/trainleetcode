@@ -1,0 +1,15 @@
+const merged = []
+	 // merge sorted arrays
+     while(nums1.length && nums2.length){
+         if(nums1[0] < nums2[0])
+             merged.push(nums1.shift())
+         else 
+             merged.push(nums2.shift())
+     }
+   
+     merged.push(...nums1, ...nums2)
+     
+     const isOdd = merged.length % 2
+     const mid = Math.floor(merged.length / 2)
+     
+     return isOdd ? merged[mid] : (merged[mid] + merged[mid - 1]) / 2
